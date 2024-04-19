@@ -9,7 +9,8 @@ public:
   JsonManager();
   ~JsonManager();
 
-  const json loadJsonFile(const std::string &file_path);
+  bool loadJsonFile(const std::string &file_path, json &json_data);
+  bool saveJsonFile(const json &json_data, const std::string &file_path);
 
 public:
 };
