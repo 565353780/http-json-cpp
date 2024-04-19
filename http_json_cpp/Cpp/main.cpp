@@ -1,5 +1,5 @@
 #include "json_manager.h"
-#include <nlohmann/json.hpp>
+#include <iostream>
 
 int main(int argc, char **argv) {
   JsonManager json_manager = JsonManager();
