@@ -1,7 +1,7 @@
 #include <string>
 
-bool toFileBinaryString(const std::string &file_path,
-                        std::string &binary_string);
+bool loadFile(const std::string &file_path, std::string &data_string,
+              const bool &is_binary = false);
 
-bool toBinaryStringFile(const std::string &binary_string,
-                        const std::string &file_path);
+bool saveFile(const std::string &data_string, const std::string &file_path,
+              const bool &is_binary = false, const int &indent = -1);
